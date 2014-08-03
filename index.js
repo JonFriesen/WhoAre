@@ -11,9 +11,9 @@ module.exports = {
 	you: function(domain, callback)
 	{
 		// Verify domain exists
-		if(!domain)
+		if(!domain || !callback)
 		{
-			throw new Error('Param 1 must be a domain.');
+			throw new Error('Param 1 must be a domain & Param 2 must be a callback function');
 		}
 		if(!validateDomain(domain))
 		{
@@ -107,7 +107,7 @@ function getWhoIsServer(server, callback)
 	dns.resolveCname(server, function(err, addresses)
 		{	
 			var host = '';
-			console.log(err);
+
 			if(!err)
 			{
 				host = addresses[0];

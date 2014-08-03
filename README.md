@@ -9,7 +9,7 @@ WhoAre is a nodejs whois module.
 
 ## Usage
 
-	var whoare = require('WhoAre');
+	var whoare = require('whoare');
 
 	console.log(whoare.you('nodejs.org'));
 
@@ -28,4 +28,4 @@ WhoAre is a nodejs whois module.
 ## Release History
 
 * 0.1.0 Initial Commit
-
+* 0.1.1 Removed debugging line

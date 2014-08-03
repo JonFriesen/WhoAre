@@ -1,6 +1,6 @@
 {
   "name": "whoare",
-  "version": "0.1.1",
+  "version": "0.2.2",
   "description": "whoare is a nodejs whois module.",
   "main": "index.js",
   "scripts": {

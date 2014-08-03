@@ -44,6 +44,12 @@ function getWhoIs(domain, callback)
 	{
 		var server = tld +'.whois-servers.net';
 
+		if(tld === 'tk')
+		{
+			server = 'whois.dot.tk';
+		}
+
+
 		// Try and find the proper whois server
 		getWhoIsServer(server, function(host){
 			var whoisInfo = '';

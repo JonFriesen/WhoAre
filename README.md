@@ -29,3 +29,4 @@ WhoAre is a nodejs whois module.
 
 * 0.1.0 Initial Commit
 * 0.1.1 Removed debugging line
+* 0.2.2 Added .tk support
